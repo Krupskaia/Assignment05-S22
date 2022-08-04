@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <fieldset>
+            <legend>Add Employee</legend>
+            <label for="name">Id:</label>
+            <input type="text" id="id" value="" maxlength="8" required><br> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="" required><br>       
+            <label for="extension">Extension:</label>
+            <input type="text" id="extension" value="" maxlength="4" required><br>
+            <label for="title">Email:</label>
+            <input type="email" id="email" value="" required><br>
+            <label for="title">Department:</label>
+            <select name="department" id="department" required>
+                <option value="administrative">Administrative</option>
+                <option value="engineering">Engineering</option>
+                <option value="executive">Executive</option>
+                <option value="marketing">Marketing</option>
+                <option value="quality">Quality Assurance</option>
+                <option value="sales">Sales</option>
+              </select><br>
+            <input type="submit" id="add" value="AddEmployee">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
